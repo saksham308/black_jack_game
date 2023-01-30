@@ -18,7 +18,7 @@ function startGame(){
     sum=firstcard+secondcard
     if (player.chips>-1){
     renderGame()}
-    else{
+    else{alert("You are starting new game") 
     player.chips=200
     startGame()}
 }
