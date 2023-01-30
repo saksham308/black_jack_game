@@ -1,5 +1,5 @@
 let isAlive=false
-player={name:'saksham',chips:'200'}
+player={name:'saksham',chips:200}
 let sum=0
 let hasBlackJack=false
 let message=''
@@ -13,9 +13,14 @@ function startGame(){
     let firstcard=getRandomCard()
     let secondcard=getRandomCard()
     isAlive=true
+    hasBlackJack=false
     cards=[firstcard,secondcard]
     sum=firstcard+secondcard
-    renderGame()
+    if (player.chips>-1){
+    renderGame()}
+    else{
+    player.chips=200
+    startGame()}
 }
 function renderGame(){
     cardsEl.textContent= "Cards: " 
@@ -28,9 +33,12 @@ function renderGame(){
     }else if(sum===21){
         message="Congratulations!"
         hasBlackJack=true
+        player.chips+=5
     }else{
         message='You are out of the game!'
         isAlive=false
+        player.chips-=50
+        console.log(player.chips)
     }
     messageEl.textContent=message
 }
@@ -53,4 +61,3 @@ function newcard(){
         renderGame()}
     
 }
-
