@@ -1,0 +1,33 @@
+        div{
+            color: goldenrod;
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+        }
+        body{
+
+            background-image: url('https://media.istockphoto.com/id/1218355494/vector/poker-table-background-in-green-color.jpg?s=612x612&w=0&k=20&c=qJ-IauRqbIhaeQ5CXZxwysghJUm1VE5wW0odCiFt4yg=');
+            background-size: cover;
+        }
+        p{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: aliceblue;
+            font-size: 5vh;
+            height: 15vh;
+            text-shadow: 50vh;
+            text-shadow: 1px 1px 2px rgb(0, 255, 106), 0 0 1em blue, 0 0 0.2em blue;
+        }
+        #message-el{
+            font-style: italic;
+        }
+        .startgame{width: 150px;
+
+        }
+        .newcard{
+            width: 150px;
+            margin: auto;
+            display: block !important;
+            margin-top: 8px;
+        }
