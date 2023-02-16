@@ -33,7 +33,7 @@ function renderGame(){
     }else if(sum===21){
         message="Congratulations!"
         hasBlackJack=true
-        player.chips+=5
+        player.chips+=50
     }else{
         message='You are out of the game!'
         isAlive=false
